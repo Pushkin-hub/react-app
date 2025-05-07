@@ -1,9 +1,20 @@
 import react from "react";
-const TestComponent = function() {
+const TestComponent = function(props) {
+    let title = props.title
+    let color = props.color
+    const clickHandler = () => {
+        if (typeof props.onclick === 'function') {
+            props.oneClick ("props color is: " + color)
+        }
+    }
+
+
+
     return (
         <div>
-        TestComponent 
+            <button onClick={clickHandler}>{title}</button>
         </div>
+        
     )
 }
 export default TestComponent;
