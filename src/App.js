@@ -18,17 +18,19 @@ function App() {
 
   return (
     <>
-      <AnotherOneComponent/>
+      <AnotherOneComponent title = {"button"} color= {'grey'}/>
       <div className="App">
         <TestComponent title={"Button 1"} color={'red'} onclick={someFunc}/>
         <TestComponent title={"Button 2"} color={'green'} onclick={someFunc1}/>
         <TestComponent title={"Button 3"} color={'blue'}/>
         <TestComponent title={"Button 4"} color={'black'}/>
 
-        <ClassComponent/>
+        <ClassComponent startValue = {3} incValue = {5}/>
       </div>
-      <div>no class</div>
-      <CurrentDate/>
+      <div>
+        <CurrentDate title = {"Hello World!!!"} />
+      </div>
+      
       <CurrentTime/>
     </>
   );

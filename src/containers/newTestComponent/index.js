@@ -1,18 +1,19 @@
 import react from "react";
+
 const TestComponent = function(props) {
-    let title = props.title
-    let color = props.color
+
+    let { title, color, onclick } = props;
+
     const clickHandler = () => {
-        if (typeof props.onclick === 'function') {
-            props.oneClick ("props color is: " + color)
+        if (typeof onclick === 'function') {
+            onclick ("props color is: " + color)
         }
     }
 
 
-
     return (
         <div>
-            <button onClick={clickHandler}>{title}</button>
+            <button onClick={clickHandler} style = {{color: 'red', background: 'green', fontSize: "16px"}}>{title}</button>
         </div>
         
     )
