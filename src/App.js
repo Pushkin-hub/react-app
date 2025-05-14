@@ -6,6 +6,8 @@ import AnotherOneComponent from './containers/anotherOneComponent';
 import ClassComponent from './containers/classComponent';
 import CurrentDate from './containers/currentDate';
 import CurrentTime from './containers/currentTime';
+import Writers from './containers/Writers';
+import Form from "./containers/Form";
 
 function App() {
   const someFunc = (value) => {
@@ -20,12 +22,14 @@ function App() {
     <>
       <AnotherOneComponent title = {"button"} color= {'grey'}/>
       <div className="App">
-        <TestComponent title={"Button 1"} color={'red'} onclick={someFunc}/>
+        {/* <TestComponent title={"Button 1"} color={'red'} onclick={someFunc}/>
         <TestComponent title={"Button 2"} color={'green'} onclick={someFunc1}/>
         <TestComponent title={"Button 3"} color={'blue'}/>
         <TestComponent title={"Button 4"} color={'black'}/>
 
-        <ClassComponent startValue = {3} incValue = {5}/>
+        <ClassComponent startValue = {3} incValue = {5}/> */}
+        <Form />
+        <Writers />
       </div>
       <div>
         <CurrentDate title = {"Hello World!!!"} />
