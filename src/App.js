@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <AnotherOneComponent title = {"button"} color= {'grey'}/>
+      
       <div className="App">
         {/* <TestComponent title={"Button 1"} color={'red'} onclick={someFunc}/>
         <TestComponent title={"Button 2"} color={'green'} onclick={someFunc1}/>
@@ -29,7 +29,6 @@ function App() {
 
         <ClassComponent startValue = {3} incValue = {5}/> */}
         <Form />
-        <Writers />
       </div>
       <div>
         <CurrentDate title = {"Hello World!!!"} />

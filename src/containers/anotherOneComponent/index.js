@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 import './style.css'
-import TestComponent from '../../containers/newTestComponent';
+import { Link, NavLink} from 'react-router-dom';
 
 const AnotherOneComponent = function(props) {
 
@@ -24,8 +24,23 @@ const AnotherOneComponent = function(props) {
     return (
         <div className="header" style={{backgroundColor: bgcolor}}>
             header
-            <TestComponent title={props.title} color={'pink'} onclick = {btnClickFn}/>
-            <TestComponent title={currentValue} color={'pink'} onclick = {counter}/>
+            <ul>
+                <li>
+                    <Link to={'/details'} title={'item.title'}>
+                        details link
+                    </Link>
+                </li>
+                <li>
+                    <NavLink 
+                    to={'/test'}
+                    className={''}
+                    title={"item.title"}
+                    >
+
+                        <span>test link</span>
+                    </NavLink>
+                </li>
+            </ul>
         </div>
     )
 }
