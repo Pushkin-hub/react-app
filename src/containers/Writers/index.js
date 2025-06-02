@@ -1,32 +1,30 @@
-import Writer from "./component/writer"
-const writers = [
-    {name: 'John', lastName: "Doe", id:1},
-    {name: 'dfdfdf', lastName: "Doedf", id:2},
-    {name: 'xcccxc', lastName: "Ddfdffoe", id:3},
-    {name: 'sjdsjkd', lastName: "Dldld", id:4},
-    {name: 'Jdsdsds', lastName: "Jkdsfe", id:5},
-    {name: 'Johfd', lastName: "fvfdg", id:6},
-    {name: 'LLDdsds', lastName: "dkskdsk", id:7},
+import Writer from "./components/writer";
 
+const writers = [
+    {name: 'john',lastName:"doe", id:1},
+    {name: 'asdv',lastName:"seb", id:2},
+    {name: 'wef22',lastName:"qg542", id:3},
+    {name: 'ceqwr32',lastName:"brwrwc", id:4},
+    {name: 'mtmt',lastName:"yfnr", id:5},
+    {name: 'eh',lastName:"ryn", id:6},
+    {name: 'hehr',lastName:"h3ty4", id:7},
 ]
+
 const Writers = (props) => {
 
-    return (
+    return(
         <div>
-            {/* <Writer {...writers[0]} />
-            <Writer {...writers[1]} />
-            <Writer {...writers[2]} />
-            <Writer {...writers[3]} />
-            <Writer {...writers[4]} />
-            <Writer {...writers[5]} />
-            <Writer {...writers[6]} /> */}
+            {/* <Writer  {...writers[0]} />
+            <Writer  {...writers[1]} />
+            <Writer  {...writers[2]} />
+            <Writer  {...writers[3]} />
+            <Writer  {...writers[4]} /> */}
 
             {writers.map((item, index) => {
                 return (<Writer {...item} key={item.id}/>)
             })}
+
         </div>
     )
-
 }
-
-export default Writers
+export default Writers;

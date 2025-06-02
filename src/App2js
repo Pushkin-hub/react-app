@@ -1,0 +1,32 @@
+import react from 'react';
+import logo from './logo.svg';
+import './App.css';
+import TestComponent from './containers/newTestComponent';
+import AnotherOneComponent from './containers/anotherOneComponent';
+import ClassComponent from './containers/classComponent';
+import CurrentDate from './containers/CurrentDate';
+import CurrentTime from './containers/CurrentTime';
+import Writers from './containers/Writers';
+import Form from './containers/Form';
+
+function App2(props) {
+  const someFunc = (value) => {
+    alert(value)
+  }
+
+  const someFunc1 = (value) => {
+    console.log(value)
+  }
+  
+  return (
+    <>  
+      <div className="App">
+       component2 
+      </div>
+     
+    </>
+    
+  );
+}
+
+export default App2;

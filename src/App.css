@@ -36,11 +36,3 @@
     transform: rotate(360deg);
   }
 }
-.style-string {
-  font-family: 'Times New Roman', Times, serif;
-}
-.p-size {
-  font-size: 25px;
-  color: antiquewhite;
-  background-color: steelblue;
-}
