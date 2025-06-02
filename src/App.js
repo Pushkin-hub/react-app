@@ -9,7 +9,7 @@ import CurrentTime from './containers/currentTime';
 import Writers from './containers/Writers';
 import Form from "./containers/Form";
 
-function App() {
+export default function App() {
   const someFunc = (value) => {
     alert (value)
   }
@@ -39,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+
