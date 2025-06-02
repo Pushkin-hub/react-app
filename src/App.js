@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TestComponent from './containers/newTestComponent';
@@ -27,7 +27,7 @@ function App(props) {
           <Routes>
             <Route exact path="/" Component={AnotherOneComponent} />
             <Route path="/about" Component={Writers} />
-            <Route path="/test" Component={TestComponent} />
+            <Route path="/test/:id?" Component={TestComponent} />
             {/* <Route component={CurrentTime} /> */}
           </Routes>
           {/* <AnotherOneComponent/> */}

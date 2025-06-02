@@ -1,19 +1,20 @@
 import react from "react";
+import { useLocation, useParams } from "react-router-dom";
 
 const TestComponent = function(props) {
-   
-    let { title, color,  onclick} = props;
+    const location = useLocation();
+    const queryParams = new URLSearchParams (location.search);
+    const param1 = queryParams.get ('color');
+    const param2 = queryParams.get ('year');
+    const { id } = useParams ();
 
-    const clickHandler = () => {
-       if (typeof onclick === 'function') {
-        onclick( "props color is: " + color)
-       }
-    }
-    let styles = {color: 'red', background: 'green', fontSize: "16px"}
+
+    console.log (location, queryParams, param1, param2, id)
+
 
     return (
         <div>
-            <button onClick={clickHandler} style={styles}> {title} </button>
+            queryString
         </div>
     )
 }

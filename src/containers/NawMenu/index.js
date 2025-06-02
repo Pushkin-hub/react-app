@@ -10,7 +10,7 @@ const NavMenu = () => {
             <Link to="/about" className="links">
                 About
             </Link>
-            <Link to="/test" className="links">
+            <Link to="/test/27?color=yellow&year=2018" className="links">
                 News
             </Link>
         </>
